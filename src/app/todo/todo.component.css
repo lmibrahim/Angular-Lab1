@@ -1,0 +1,43 @@
+.white-container {
+  background: white;
+}
+
+.todo-container {
+  width: 80%;
+}
+
+.todo-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.complete-button {
+  font: #ff69b4;
+  background: #eee;
+  border-radius: 5px;
+}
+.x-button {
+  position: relative;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: none;
+}
+
+/* .addcontainer {
+  position: relative;
+  align-items: center;
+} */
+
+.addtaskform {
+  width: 80%;
+}
+.addtask {
+  width: 80%;
+  padding: 10px;
+  align-items: center;
+  background-color: #ff1493;
+  color: white;
+  border-radius: 5px;
+}

@@ -1,0 +1,32 @@
+<section class="white-container">
+  <header>
+    <h1>TODO List</h1>
+    <p>A place to store your to-do's</p>
+  </header>
+
+  <form #filter="ngForm" (input)="setSearchTerm(filter)">
+    <label for="term" class="filter-container"></label>
+    <input type="text" name="term" placeholder="Filter your to-do's" ngModel />
+  </form>
+
+  <ul>
+    <li *ngFor="let task of todolist; index as i" class="todo-container">
+      <button class="complete-button">Complete</button>
+      <p>{{ task.task }}</p>
+      <!-- <p>{{ task.completed }}</p> -->
+      <button (click)="deleteTask(i)">X</button>
+    </li>
+  </ul>
+
+  <!-- ADDING NEW TASK -->
+
+  <form #addNewTask="ngForm" (ngSubmit)="addTask(addNewTask, todolist)">
+    <label for="addTask" class="addtaskform"></label>
+    <input type="text" name="addTask" placeholder="Add your to-do" ngModel />
+
+    <button class="addtask">Add</button>
+
+    <!-- <label for="completed"></label>
+  <input type="button" name="completed" /> -->
+  </form>
+</section>
