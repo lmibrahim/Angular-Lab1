@@ -3,13 +3,11 @@
 }
 
 .todo-container {
-  width: 80%;
-}
-
-.todo-container {
   position: relative;
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  text-align: center;
 }
 
 .complete-button {
